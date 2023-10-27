@@ -1,0 +1,77 @@
+<div *ngIf="userType === 0">
+  <!-- Start SideBar -->
+  <aside>
+    <br /><br /><br />
+    <h4>ELPE BANK</h4>
+    <br />
+    <a routerLink="admin/dashboard">
+      <i aria-hidden="true"></i>
+      Dashboard
+    </a>
+    <a routerLink="admin/add-user">
+      <i aria-hidden="true"></i>
+      Kullanıcı Ekle
+    </a>
+    <a routerLink="admin/user-list">
+      <i aria-hidden="true"></i>
+      Kullanıcı Listesi
+    </a>
+    <a routerLink="admin/accounts">
+      <i aria-hidden="true"></i>
+      Hesaplar
+    </a>
+    <a routerLink="admin/transactions">
+      <i aria-hidden="true"></i>
+      İşlemler
+    </a>
+  </aside>
+  <!-- End SideBar -->
+</div>
+
+<div *ngIf="userType === 1">
+  <!-- Start SideBar -->
+  <aside>
+    <br /><br /><br />
+    <h4>ELPE BANK</h4>
+    <br />
+    <a routerLink="employee/dashboard">
+      <i aria-hidden="true"></i>
+      Dashboard
+    </a>
+    <a routerLink="employee/user-list">
+      <i aria-hidden="true"></i>
+      Kullanıcı Listesi
+    </a>
+    <a routerLink="employee/accounts">
+      <i aria-hidden="true"></i>
+      Hesaplar
+    </a>
+    <a routerLink="employee/transactions">
+      <i aria-hidden="true"></i>
+      İşlemler
+    </a>
+  </aside>
+  <!-- End SideBar -->
+</div>
+
+<div *ngIf="userType === 2">
+  <!-- Start SideBar -->
+  <aside>
+    <br /><br /><br />
+    <h4>ELPE BANK</h4>
+    <br />
+    <a routerLink="customer/dashboard">
+      <i aria-hidden="true"></i>
+      Dashboard
+    </a>
+    <a routerLink="customer/account">
+      <i aria-hidden="true"></i>
+      Hesaplarım
+    </a>
+    <a routerLink="customer/transaction">
+      <i aria-hidden="true"></i>
+      İşlemlerim
+    </a>
+  </aside>
+  <!-- End SideBar -->
+</div>

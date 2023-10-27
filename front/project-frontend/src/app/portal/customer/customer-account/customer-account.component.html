@@ -1,0 +1,30 @@
+<br><br><br><br>
+<div class="row">
+  <div class="col-xxl-12 d-flex">
+    <div class="card border-1 p-1 flex-fill w-100">
+      <div class="card-header border-0 card-header-space-between">
+        <h2 class="card-header-title h4 text-secondary">Hesaplar</h2>
+      </div>
+      <div class="table-responsive">
+        <table
+          id="projectsTable"
+          class="table align-middle table-edge table-nowrap mb-0">
+          <thead class="thead-light">
+            <tr>
+              <th class="user-cell">ID</th>
+              <th class="title-cell">Bakiye</th>
+              <th class="description-cell">Kullanıcı</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let account of accounts">
+              <td class="text-muted col-1">{{ account.id }}</td>
+              <td class="text-muted col-2">{{ account.balance }}</td>
+              <td class="text-muted col-2">{{ account.userId }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
